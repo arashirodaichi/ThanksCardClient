@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ThanksCardClient.Services;
 
+//Department クラス
 namespace ThanksCardClient.Models
 {
     public class Department : BindableBase
