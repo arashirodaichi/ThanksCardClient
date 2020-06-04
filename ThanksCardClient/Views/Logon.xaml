@@ -4,14 +4,14 @@
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
-        <StackPanel>
+        <StackPanel Margin="0,0,-0.4,-0.4">
+            <TextBlock Text="Thank You!" FontSize="70" Foreground="Silver" HorizontalAlignment="Center"/>
             <TextBlock Text="{Binding ErrorMessage}" Foreground="Red"/>
             <TextBlock Text="ユーザー名" HorizontalAlignment="Center"/>
             <TextBox Text="{Binding User.Name}" Margin="200,0"/>
             <TextBlock Text="パスワード" HorizontalAlignment="Center"/>
             <TextBox Text="{Binding User.Password}" Margin="200,0"/>
-            <Button Content="ログイン" Command="{Binding LogonCommand}" Background="GreenYellow"
-                    Width="100"/>
+            <Button Content="ログイン" Command="{Binding LogonCommand}" Background="GreenYellow" Margin="110,0,110.6,0" Height="40"/>
         </StackPanel>
     </Grid>
 </UserControl>
