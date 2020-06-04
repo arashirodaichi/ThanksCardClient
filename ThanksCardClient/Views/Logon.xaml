@@ -6,11 +6,12 @@
     <Grid>
         <StackPanel>
             <TextBlock Text="{Binding ErrorMessage}" Foreground="Red"/>
-            <TextBlock Text="Name:"/>
-            <TextBox Text="{Binding User.Name}"/>
-            <TextBlock Text="Password:"/>
-            <TextBox Text="{Binding User.Password}"/>
-            <Button Content="Logon" Command="{Binding LogonCommand}"/>
+            <TextBlock Text="ユーザー名" HorizontalAlignment="Center"/>
+            <TextBox Text="{Binding User.Name}" Margin="200,0"/>
+            <TextBlock Text="パスワード" HorizontalAlignment="Center"/>
+            <TextBox Text="{Binding User.Password}" Margin="200,0"/>
+            <Button Content="ログイン" Command="{Binding LogonCommand}" Background="GreenYellow"
+                    Width="100"/>
         </StackPanel>
     </Grid>
 </UserControl>
