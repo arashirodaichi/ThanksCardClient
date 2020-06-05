@@ -5,7 +5,7 @@
              prism:ViewModelLocator.AutoWireViewModel="True" Width="791.2" Height="485.6">
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="テーマ.png"/>
+            <ImageBrush ImageSource="テーマ2.png"/>
         </Grid.Background>
         <Button Content="部署ごとの集計" HorizontalAlignment="Left" Margin="91,99,0,0" VerticalAlignment="Top" Width="168" Height="94" FontSize="22" FontWeight="Bold" Background="#FF23E8EB"/>
         <Button Content="受け取りランキング" HorizontalAlignment="Left" Margin="308,99,0,0" VerticalAlignment="Top" Width="168" Height="94" FontSize="22" FontWeight="Bold" Background="#FF23E8EB"/>
