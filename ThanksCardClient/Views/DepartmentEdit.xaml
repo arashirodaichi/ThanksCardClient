@@ -5,8 +5,8 @@
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
         <StackPanel>
-            <TextBlock Text="{Binding ErrorMessage}" Foreground="Red"/>
-            <TextBlock Text="部署コード（自動入力）:"/>
+            <TextBlock Text="{Binding ErrorMessage}" Foreground="Red" Height="19" Margin="0,0,0.2,0"/>
+            <TextBlock Text="部署コード（自動入力）:" Height="16" Margin="0,0,0.2,0"/>
             <TextBox Text="{Binding Department.Code}"/>
             <TextBlock Text="部署名を入力:"/>
             <TextBox Text="{Binding Department.Name}"/>
@@ -15,5 +15,6 @@
 
             <Button Content="更新" Command="{Binding SubmitCommand}" Click="Button_Click"/>
         </StackPanel>
+        <Button Content="戻る" HorizontalAlignment="Left" VerticalAlignment="Top" Width="55" Margin="58,0,0,0" Height="18"/>
     </Grid>
 </UserControl>
