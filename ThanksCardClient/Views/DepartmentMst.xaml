@@ -32,5 +32,6 @@
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>
+        <Button Content="戻る" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="115,0,0,0"/>
     </Grid>
 </UserControl>
