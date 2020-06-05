@@ -1,16 +1,17 @@
 ﻿<UserControl x:Class="ThanksCardClient.Views.Logon"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:prism="http://prismlibrary.com/"             
+             xmlns:prism="http://prismlibrary.com/"
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
         <StackPanel>
             <TextBlock Text="{Binding ErrorMessage}" Foreground="Red"/>
-            <TextBlock Text="Name:"/>
-            <TextBox Text="{Binding User.Name}"/>
-            <TextBlock Text="Password:"/>
-            <TextBox Text="{Binding User.Password}"/>
-            <Button Content="Logon" Command="{Binding LogonCommand}"/>
+            <TextBlock Text="ユーザー名" HorizontalAlignment="Center"/>
+            <TextBox Text="{Binding User.Name}" Margin="200,0"/>
+            <TextBlock Text="パスワード" HorizontalAlignment="Center"/>
+            <TextBox Text="{Binding User.Password}" Margin="200,0"/>
+            <Button Content="ログイン" Command="{Binding LogonCommand}" Background="GreenYellow"
+                    Width="100"/>
         </StackPanel>
     </Grid>
 </UserControl>

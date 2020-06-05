@@ -4,47 +4,43 @@
              xmlns:prism="http://prismlibrary.com/" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
-        <StackPanel>
-            <TextBlock Text="タイトル:"/>
-            <TextBox Text="{Binding ThanksCard.Title}"/>
-            <TextBlock Text="感謝の言葉:"/>
-            <TextBox Text="{Binding ThanksCard.Body}"/>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="部署:"/>
-                <ComboBox x:Name="FromDepartments" ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValuePath="Id">
-                    <!-- Deparment が選択されたら FromDepartmentsChangedCommand を発行する -->
-                    <i:Interaction.Triggers>
-                        <i:EventTrigger EventName="SelectionChanged">
-                            <i:InvokeCommandAction Command="{Binding FromDepartmentsChangedCommand}" CommandParameter="{Binding ElementName=FromDepartments, Path=SelectedValue}"/>
-                        </i:EventTrigger>
-                    </i:Interaction.Triggers>
-                </ComboBox>
-                <TextBlock Text="From:"/>
-                <ComboBox ItemsSource="{Binding FromUsers}" DisplayMemberPath="Name" SelectedValue="{Binding ThanksCard.FromId}" SelectedValuePath="Id"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal">
-                <TextBlock Text="部署:"/>
-                <ComboBox x:Name="ToDepartments" ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValuePath="Id">
-                    <!-- Deparment が選択されたら ToDepartmentsChangedCommand を発行する -->
-                    <i:Interaction.Triggers>
-                        <i:EventTrigger EventName="SelectionChanged">
-                            <i:InvokeCommandAction Command="{Binding ToDepartmentsChangedCommand}" CommandParameter="{Binding ElementName=ToDepartments, Path=SelectedValue}"/>
-                        </i:EventTrigger>
-                    </i:Interaction.Triggers>
-                </ComboBox>
-                <TextBlock Text="To:"/>
-                <ComboBox ItemsSource="{Binding ToUsers}" DisplayMemberPath="Name" SelectedValue="{Binding ThanksCard.ToId}" SelectedValuePath="Id"/>
-            </StackPanel>
-            <TextBlock Text="作成日:"/>
-            <DatePicker SelectedDate="{Binding ThanksCard.CreatedDateTime}"/>
-            <ListBox ItemsSource="{Binding Tags}" IsSynchronizedWithCurrentItem="True" SelectionMode="Multiple" DisplayMemberPath="Name">
-                <ListBox.ItemContainerStyle>
-                    <Style TargetType="ListBoxItem">
-                        <Setter Property="IsSelected" Value="{Binding Selected}" />
-                    </Style>
-                </ListBox.ItemContainerStyle>
-            </ListBox>
-            <Button Content="作成" Command="{Binding SubmitCommand}"/>
-        </StackPanel>    
+        <StackPanel Margin="-110,0,-170,-30" >
+            <StackPanel.Background>
+                <ImageBrush ImageSource="image1.png" />
+            </StackPanel.Background>
+            <TextBlock Text="to:"/>
+            <TextBox Text="{Binding ThanksCard.Title}" Background="Transparent"/>
+
+            <TextBlock Text="from:"/>
+            <TextBox Text="{Binding ThanksCard.Title}" Background="Transparent"/>
+
+            <TextBlock Text="date:"/>
+            <TextBox Text="{Binding ThanksCard.Title}" Background="Transparent"/>
+
+            <TextBlock Text="from:"/>
+            <TextBox Text="{Binding ThanksCard.Title}" Background="Transparent" Height="18" Margin="0,0,0.2,0"/>
+
+            <TextBlock Text="title:"/>
+            <TextBox Background="Transparent"/>
+
+
+
+
+
+            <TextBox Text="{Binding ThanksCard.Body}" Background="Transparent" Height="79"/>
+
+
+        </StackPanel>
+        <Button Content="既読" HorizontalAlignment="Left" Margin="-166,-43,0,0" VerticalAlignment="Top" Width="45" RenderTransformOrigin="-8.193,0.333" Height="17"/>
+        <Button Content="いいね" HorizontalAlignment="Left" Margin="-105,-43,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="-0.555,-0.167" Height="17"/>
+        <Button Content="戻る" HorizontalAlignment="Left" Margin="228,-43,-231,0" VerticalAlignment="Top" Width="43" Height="17"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="18" Margin="-110,67,-170,0" VerticalAlignment="Top" Width="320"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="18" Margin="-110,101,-170,0" VerticalAlignment="Top" Width="320"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="18" Margin="-110,134,-170,0" VerticalAlignment="Top" Width="320"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="18" Margin="-110,32,-170,0" VerticalAlignment="Top" Width="320"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="18" Margin="-110,0,-170,0" VerticalAlignment="Top" Width="320"/>
+        
     </Grid>
+
+
 </UserControl>
