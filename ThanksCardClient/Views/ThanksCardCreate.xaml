@@ -4,43 +4,53 @@
              xmlns:prism="http://prismlibrary.com/" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid>
-        <StackPanel Margin="-110,0,-170,-30" >
+        <StackPanel Margin="-189,-175,-201,-26" >
             <StackPanel.Background>
                 <ImageBrush ImageSource="image1.png" />
             </StackPanel.Background>
-            <TextBlock Text="to:"/>
-            <TextBox Text="{Binding ThanksCard.Title}" Background="Transparent"/>
+            <Border BorderBrush="Black" BorderThickness="1" Height="245" Margin="0,0,0.4,0"/>
 
-            <TextBlock Text="from:"/>
-            <TextBox Text="{Binding ThanksCard.Title}" Background="Transparent"/>
-
-            <TextBlock Text="date:"/>
-            <TextBox Text="{Binding ThanksCard.Title}" Background="Transparent"/>
-
-            <TextBlock Text="from:"/>
-            <TextBox Text="{Binding ThanksCard.Title}" Background="Transparent" Height="18" Margin="0,0,0.2,0"/>
-
-            <TextBlock Text="title:"/>
-            <TextBox Background="Transparent"/>
-
-
-
-
-
-            <TextBox Text="{Binding ThanksCard.Body}" Background="Transparent" Height="79"/>
 
 
         </StackPanel>
-        <Button Content="既読" HorizontalAlignment="Left" Margin="-166,-43,0,0" VerticalAlignment="Top" Width="45" RenderTransformOrigin="-8.193,0.333" Height="17"/>
-        <Button Content="いいね" HorizontalAlignment="Left" Margin="-105,-43,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="-0.555,-0.167" Height="17"/>
-        <Button Content="戻る" HorizontalAlignment="Left" Margin="228,-43,-231,0" VerticalAlignment="Top" Width="43" Height="17"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="18" Margin="-110,67,-170,0" VerticalAlignment="Top" Width="320"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="18" Margin="-110,101,-170,0" VerticalAlignment="Top" Width="320"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="18" Margin="-110,134,-170,0" VerticalAlignment="Top" Width="320"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="18" Margin="-110,32,-170,0" VerticalAlignment="Top" Width="320"/>
-        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="18" Margin="-110,0,-170,0" VerticalAlignment="Top" Width="320"/>
-        
+        <Button Content="既読" HorizontalAlignment="Left" Margin="-183,-167,0,0" VerticalAlignment="Top" Width="45" RenderTransformOrigin="-8.193,0.333" Height="17" Background="#FF32F714" FontFamily="Tw Cen MT Condensed Extra Bold"/>
+        <Button Content="いいね" HorizontalAlignment="Left" Margin="-133,-167,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="-0.555,-0.167" Height="17" Background="#FF13F9F5" FontFamily="Tw Cen MT Condensed Extra Bold"/>
+        <Button Content="戻る" HorizontalAlignment="Left" Margin="227,-167,-191.6,0" VerticalAlignment="Top" Width="43" Height="18" FontFamily="Tw Cen MT Condensed Extra Bold"/>
+        <StackPanel Margin="-150,-139,-166,-31" >
+
+            <TextBox Text="To:" Background="Transparent"/>
+
+
+            <TextBox Text="From:" Background="Transparent"/>
+
+
+            <TextBox Text="Date:" Background="Transparent" TextChanged="TextBox_TextChanged"/>
+
+            <TextBox Background="Transparent" Text="Title:"/>
+
+
+
+
+
+            <TextBox Text="{Binding ThanksCard.Body}" Background="Transparent" Height="119"/>
+
+        </StackPanel>
+        <TextBox HorizontalAlignment="Left" Height="108" Margin="-189,70,-200.6,-134" TextWrapping="Wrap" VerticalAlignment="Top" Width="468"/>
+        <TextBox HorizontalAlignment="Left" Height="21" Margin="-189,178,-200.6,-155" TextWrapping="Wrap" VerticalAlignment="Top" Width="468" Background="#FFF0E5E5"/>
+        <Button Content="送信" HorizontalAlignment="Left" Margin="239,178,-200.6,-155" VerticalAlignment="Top" Width="40" Height="21" FontFamily="Tw Cen MT Condensed Extra Bold" Background="#FF13F9F5"/>
+        <Label Content="Thank you ！" HorizontalAlignment="Left" Margin="-43,-176,-68.6,0" VerticalAlignment="Top" Width="190" Height="37" FontSize="18" FontFamily="Wide Latin">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Offset="1" Color="#FFE0DCDC"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+
+
+
     </Grid>
+
 
 
 </UserControl>
