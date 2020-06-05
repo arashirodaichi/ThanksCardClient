@@ -9,10 +9,10 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition Width="40*"/>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="61*"/>
         </Grid.ColumnDefinitions>
-        <StackPanel Grid.ColumnSpan="2" Margin="0,0,0.6,-0.2" Grid.RowSpan="2">
+        <StackPanel Grid.ColumnSpan="2" Margin="0,0,1,-0.4" Grid.RowSpan="2">
             <TextBlock Text="{Binding ErrorMessage}" Foreground="Red" Height="21" Margin="0,0,0.2,0"/>
             <TextBlock Text="部署コード（自動入力）:" Height="16" Margin="0,0,0.2,0"/>
             <TextBox Text="{Binding Department.Code}"/>
@@ -23,6 +23,6 @@
 
             <Button Content="追加" Command="{Binding SubmitCommand}"/>
         </StackPanel>
-        <Button Content="戻る" HorizontalAlignment="Left" VerticalAlignment="Top" Width="53" Height="20" Margin="57.2,0,0,0" Grid.Column="1" Grid.RowSpan="2"/>
+        <Button Content="戻る" Command="{Binding SubmitCommand1}" Margin="10,0,34,123" Grid.Column="1"/>
     </Grid>
 </UserControl>

@@ -86,5 +86,16 @@ namespace ThanksCardClient.ViewModels
             this.UpdateDepartments();
         }
         #endregion
+
+        #region DepartmentCreateCommand1(戻る)
+        private DelegateCommand _DepartmentCreateCommand1;
+        public DelegateCommand DepartmentCreateCommand1 =>
+            _DepartmentCreateCommand1 ?? (_DepartmentCreateCommand1 = new DelegateCommand(ExecuteDepartmentCreateCommand1));
+
+        void ExecuteDepartmentCreateCommand1()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Footer));
+        }
+        #endregion
     }
 }
