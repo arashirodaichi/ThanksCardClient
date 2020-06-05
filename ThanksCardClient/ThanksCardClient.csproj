@@ -68,6 +68,7 @@
     <Compile Include="Services\SessionService.cs" />
     <Compile Include="ViewModels\DepartmentCreateViewModel.cs" />
     <Compile Include="ViewModels\DepartmentEditViewModel.cs" />
+    <Compile Include="ViewModels\Departmentmenu1ViewModel.cs" />
     <Compile Include="ViewModels\DepartmentMstViewModel.cs" />
     <Compile Include="ViewModels\FooterViewModel.cs" />
     <Compile Include="ViewModels\HeaderViewModel.cs" />
@@ -87,6 +88,9 @@
     </Compile>
     <Compile Include="Views\Departmentmenu.xaml.cs">
       <DependentUpon>Departmentmenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Departmentmenu1.xaml.cs">
+      <DependentUpon>Departmentmenu1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\DepartmentMst.xaml.cs">
       <DependentUpon>DepartmentMst.xaml</DependentUpon>
@@ -130,6 +134,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Departmentmenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Departmentmenu1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
