@@ -14,7 +14,7 @@
             <CheckBox IsChecked="{Binding User.IsAdmin}"/>
             <TextBlock Text="部署:"/>
             <ComboBox ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValue="{Binding User.DepartmentId}" SelectedValuePath="Id"/>
-            <Button Content="Submit" Command="{Binding SubmitCommand}"/>
+            <Button Content="追加" Command="{Binding SubmitCommand}"/>
         </StackPanel>
         <Button Content="戻る" Command="{Binding UserCreateCommand1}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="46" Margin="100,0,0,0"/>
     </Grid>

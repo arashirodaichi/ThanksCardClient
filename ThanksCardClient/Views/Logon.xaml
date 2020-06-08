@@ -11,6 +11,7 @@
             <TextBox Text="{Binding User.Name}" Margin="200,0"/>
             <TextBlock Text="パスワード" HorizontalAlignment="Center"/>
             <TextBox Text="{Binding User.Password}" Margin="200,0"/>
+            <Button Content="ログイン" Command="{Binding LogonCommand}" Background="GreenYellow" Margin="110,0,110.6,0" Height="40"/>
         </StackPanel>
     </Grid>
 </UserControl>
