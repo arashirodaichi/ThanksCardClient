@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
-    <Grid Width="793.603" Height="2079.981" RenderTransformOrigin="0.473,0.858" Background="Transparent">
+    <Grid Width="821" Height="2063" RenderTransformOrigin="0.473,0.858" Background="Transparent">
         <Grid.RowDefinitions>
             <RowDefinition Height="163*"/>
             <RowDefinition Height="671*"/>
@@ -29,7 +29,7 @@
         <Button Content="感謝カード送信" HorizontalAlignment="Left" Height="29.6" Margin="677.8,99.4,0,0" VerticalAlignment="Top" Width="79.2" FontSize="10" Background="#FF7AB5FF"/>
         <Button Content="感謝カード閲覧" HorizontalAlignment="Left" Height="29.6" Margin="584.2,99.4,0,0" VerticalAlignment="Top" Width="79.2" FontSize="10" Background="#FF7AB5FF"/>
         <Button Content="ありがとうランキング" HorizontalAlignment="Left" Height="29.6" Margin="490.6,99.4,0,0" VerticalAlignment="Top" Width="79.2" FontSize="9" Background="#FF7AB5FF"/>
-        <Rectangle Fill="#FFF6F6F6" HorizontalAlignment="Left" Height="34.596" Stroke="Black" VerticalAlignment="Top" Width="716" Margin="41,0,0,0" Grid.Row="1"/>
+        <Rectangle Fill="#FFF6F6F6" HorizontalAlignment="Left" Height="34" Stroke="Black" VerticalAlignment="Top" Width="747" Margin="10,0.4,0,0" Grid.Row="1"/>
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="9.6" Margin="57,31.4,0,0" Stroke="Black" VerticalAlignment="Top" Width="1.6"/>
         <ComboBox HorizontalAlignment="Left" Height="18.4" Margin="449.8,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76.8" BorderBrush="#FFFCFAFA">
             <ComboBox.Background>
@@ -59,7 +59,7 @@
         <Button Content="検索" HorizontalAlignment="Left" Height="18.4" Margin="567.4,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76.8" Background="#FF7AB5FF"/>
         <Button Content="リセット" HorizontalAlignment="Left" Height="18.4" Margin="662.6,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76.8"/>
 
-        <DataGrid HorizontalAlignment="Left" Height="120" Margin="10,137.962,0,0" VerticalAlignment="Top" Width="747" Grid.Row="1">
+        <DataGrid HorizontalAlignment="Left" Height="120" Margin="10,139.4,0,0" VerticalAlignment="Top" Width="747" Grid.Row="1">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="部署" Binding="{Binding Department}"/>
                 <DataGridTextColumn Header="タイトル" Binding="{Binding Title}"/>
