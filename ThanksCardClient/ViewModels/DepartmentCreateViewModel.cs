@@ -80,5 +80,15 @@ namespace ThanksCardClient.ViewModels
         }
         #endregion
 
+        #region SubmitCommand1(戻る)
+        private DelegateCommand _SubmitCommand1;
+        public DelegateCommand SubmitCommand1 =>
+            _SubmitCommand1 ?? (_SubmitCommand1 = new DelegateCommand(ExecuteSubmitCommand1));
+
+        void ExecuteSubmitCommand1()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.DepartmentMst));
+        }
+        #endregion
     }
 }

@@ -33,5 +33,6 @@
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>
+        <Button Content="戻る" Command="{Binding UserCreateCommand1}" Margin="143,0,62.4,25.8"/>
     </Grid>
 </UserControl>
