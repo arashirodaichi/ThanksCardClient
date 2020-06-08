@@ -8,7 +8,7 @@
             <StackPanel.Background>
                 <ImageBrush ImageSource="image1.png" />
             </StackPanel.Background>
-            <Border BorderBrush="Black" BorderThickness="1" Height="242" Margin="0,0,0.8,0"/>
+            <Border BorderBrush="Black" BorderThickness="1" Height="262" Margin="0,0,0.8,0"/>
 
 
 
@@ -23,7 +23,7 @@
             <TextBox Text="From:" Background="Transparent"/>
 
 
-            <TextBox Text="Date:" Background="Transparent" TextChanged="TextBox_TextChanged"/>
+            <TextBox Text="Date:" Background="Transparent"/>
 
             <TextBox Background="Transparent" Text="Title:"/>
 
