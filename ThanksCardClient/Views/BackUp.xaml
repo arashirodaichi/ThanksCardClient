@@ -10,7 +10,7 @@
         </Grid.RowDefinitions>
         <Button Content="すべてダウンロード" HorizontalAlignment="Left" Margin="136.376,20.605,0,0" VerticalAlignment="Top" Width="124.988" FontSize="16" Background="#FFFF2424" Grid.Row="1"/>
         <Button Content="選択してダウンロード" HorizontalAlignment="Left" VerticalAlignment="Top" Width="149.943" Margin="123.22,67.833,0,0" FontSize="16" Background="#FF1AFF02" Grid.Row="1"/>
-        <Button Content="戻る" HorizontalAlignment="Left" Height="21.891" Margin="324.91,118.436,0,0" VerticalAlignment="Top" Width="47.346" Grid.Row="1"/>
+        <Button Content="戻る" Command="{Binding BackUpReturnCommand}" HorizontalAlignment="Left" Height="21.891" Margin="324.91,118.436,0,0" VerticalAlignment="Top" Width="47.346" Grid.Row="1"/>
         <Label Content="バックアップ" Height="23.426" Margin="152.716,10,138.169,0" VerticalAlignment="Top" Width="91.37" Background="White" FontFamily="Meiryo" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Path Data="M-0.76567063,44.153673" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="-0.766,1.532,0,0" Stretch="Fill" Stroke="Black" VerticalAlignment="Top" Width="1" Grid.Row="1"/>
 

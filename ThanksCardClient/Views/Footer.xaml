@@ -10,7 +10,7 @@
             <Button Content="ユーザのマスタメンテ画面を開く" Command="{Binding ShowUserMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}"/>
             <Button Content="部署のマスタメンテ画面を開く" Command="{Binding ShowDepartmentMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}"/>
             <Button Content="タグのマスタメンテ画面を開く" Command="{Binding ShowTagMstCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}"/>
-            <Button Content="人事メニュー" Command="{Binding DepartmentmenuCommand}"/>
+            <Button Content="人事メニュー" Command="{Binding DepartmentmenuCommand}" IsEnabled="{Binding AuthorizedUser.IsAdmin}"/>
             <Button Content="ログオフ" Command="{Binding LogoffCommand}" Margin="0,0,0.4,0"/>
         </StackPanel>
     </Grid>

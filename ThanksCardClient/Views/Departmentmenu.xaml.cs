@@ -1,24 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows.Controls;
 
 namespace ThanksCardClient.Views
 {
     /// <summary>
-    /// Departmentmenu.xaml の相互作用ロジック
+    /// Interaction logic for Departmentmenu
     /// </summary>
-    public partial class Departmentmenu : Page
+    public partial class Departmentmenu : UserControl
     {
         public Departmentmenu()
         {
