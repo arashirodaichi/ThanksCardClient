@@ -13,7 +13,7 @@
         <Button Content="バックアップ" HorizontalAlignment="Left" Margin="91,243,0,0" VerticalAlignment="Top" Width="168" Height="94" FontSize="22" FontWeight="Bold" Background="#FF23E8EB"/>
         <Button Content="部署管理" HorizontalAlignment="Left" Margin="308,245,0,0" VerticalAlignment="Top" Width="168" Height="94" FontSize="22" FontWeight="Bold" Background="#FF23E8EB"/>
         <Button Content="社員管理" HorizontalAlignment="Left" Margin="541,243,0,0" VerticalAlignment="Top" Width="169" Height="94" FontSize="22" FontWeight="Bold" Background="#FF23E8EB"/>
-        <Button Content="ログアウト" HorizontalAlignment="Left" Margin="91,392.701,0,0" VerticalAlignment="Top" Width="136.832" Height="49.131" FontSize="20" FontWeight="Bold"/>
+        <Button Content="戻る" Command="{Binding DepartmentReturnCommand}" HorizontalAlignment="Left" Margin="91,392.701,0,0" VerticalAlignment="Top" Width="136.832" Height="49.131" FontSize="20" FontWeight="Bold"/>
         <Label Content="Thank You!" HorizontalAlignment="Left" Margin="412.726,376,0,0" VerticalAlignment="Top" Width="312.23" FontSize="60" Background="Transparent" HorizontalContentAlignment="Center">
             <Label.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">

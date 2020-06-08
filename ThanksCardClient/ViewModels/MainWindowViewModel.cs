@@ -17,7 +17,7 @@ namespace ThanksCardClient.ViewModels
         public MainWindowViewModel(IRegionManager regionManager)
         {
             this.regionManager = regionManager;
-            this.regionManager.RegisterViewWithRegion("ContentRegion", typeof(Views.Footer));
+            this.regionManager.RegisterViewWithRegion("ContentRegion", typeof(Views.Departmentmenu1));
         }
     }
 }
