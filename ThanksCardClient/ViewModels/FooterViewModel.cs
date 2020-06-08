@@ -97,5 +97,16 @@ namespace ThanksCardClient.ViewModels
             this.regionManager.Regions["FooterRegion"].RemoveAll();
         }
         #endregion
+
+        #region ShowDepartmentmenuCommand
+        private DelegateCommand _DepartmentmenuCommand;
+        public DelegateCommand DepartmentmenuCommand =>
+            _DepartmentmenuCommand ?? (_DepartmentmenuCommand = new DelegateCommand(ExecuteDepartmentmenuCommand));
+
+        void ExecuteDepartmentmenuCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Departmentmenu1));
+        }
+        #endregion
     }
 }
