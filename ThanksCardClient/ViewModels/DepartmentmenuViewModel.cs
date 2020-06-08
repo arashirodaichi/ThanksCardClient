@@ -29,5 +29,15 @@ namespace ThanksCardClient.ViewModels
         }
         #endregion
 
+        #region DepartmentBackUpCommand
+        private DelegateCommand _DepartmentBackUpCommand;
+        public DelegateCommand DepartmentBackUpCommand =>
+            _DepartmentBackUpCommand ?? (_DepartmentBackUpCommand = new DelegateCommand(ExecuteDepartmentBackUpCommand));
+
+        void ExecuteDepartmentBackUpCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.BackUp));
+        }
+        #endregion
     }
 }
