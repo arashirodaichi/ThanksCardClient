@@ -72,6 +72,7 @@
     <Compile Include="ViewModels\DepartmentMstViewModel.cs" />
     <Compile Include="ViewModels\FooterViewModel.cs" />
     <Compile Include="ViewModels\HeaderViewModel.cs" />
+    <Compile Include="ViewModels\keijibanViewModel.cs" />
     <Compile Include="ViewModels\TagCreateViewModel.cs" />
     <Compile Include="ViewModels\TagEditViewModel.cs" />
     <Compile Include="ViewModels\TagMstViewModel.cs" />
@@ -255,6 +256,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Views\テーマ2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kansha.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
