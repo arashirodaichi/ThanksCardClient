@@ -6,9 +6,10 @@
     <Grid>
         <StackPanel>
             <TextBlock Text="{Binding ErrorMessage}" Foreground="Red"/>
-            <TextBlock Text="Name:"/>
+            <TextBlock Text="名前を入力:"/>
             <TextBox Text="{Binding Tag.Name}"/>
-            <Button Content="Submit" Command="{Binding SubmitCommand}"/>
+            <Button Content="追加" Command="{Binding SubmitCommand}"/>
         </StackPanel>
+        <Button Content="戻る" Command="{Binding CreateReturnCommand}"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="60" Height="19"/>
     </Grid>
 </UserControl>

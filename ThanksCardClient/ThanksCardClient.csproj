@@ -67,9 +67,10 @@
     <Compile Include="Services\RestService.cs" />
     <Compile Include="Services\SessionService.cs" />
     <Compile Include="ViewModels\BackUpViewModel.cs" />
+    <Compile Include="ViewModels\bushokanriViewModel.cs" />
     <Compile Include="ViewModels\DepartmentCreateViewModel.cs" />
     <Compile Include="ViewModels\DepartmentEditViewModel.cs" />
-    <Compile Include="ViewModels\Departmentmenu1ViewModel.cs" />
+    <Compile Include="ViewModels\DepartmentmenuViewModel.cs" />
     <Compile Include="ViewModels\DepartmentMstViewModel.cs" />
     <Compile Include="ViewModels\FooterViewModel.cs" />
     <Compile Include="ViewModels\HeaderViewModel.cs" />
@@ -86,6 +87,9 @@
     <Compile Include="Views\BackUp.xaml.cs">
       <DependentUpon>BackUp.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\bushokanri.xaml.cs">
+      <DependentUpon>bushokanri.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\DepartmentCreate.xaml.cs">
       <DependentUpon>DepartmentCreate.xaml</DependentUpon>
     </Compile>
@@ -94,9 +98,6 @@
     </Compile>
     <Compile Include="Views\Departmentmenu.xaml.cs">
       <DependentUpon>Departmentmenu.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Departmentmenu1.xaml.cs">
-      <DependentUpon>Departmentmenu1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\DepartmentMst.xaml.cs">
       <DependentUpon>DepartmentMst.xaml</DependentUpon>
@@ -141,6 +142,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\bushokanri.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\DepartmentCreate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -153,10 +158,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Departmentmenu1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Views\DepartmentMst.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -166,6 +167,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Header.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\keijiban2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -274,6 +279,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Views\テーマ2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kansha.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

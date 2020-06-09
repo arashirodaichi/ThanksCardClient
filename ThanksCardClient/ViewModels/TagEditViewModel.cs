@@ -65,5 +65,16 @@ namespace ThanksCardClient.ViewModels
         }
         #endregion
 
+        #region EditReturnCommand
+        private DelegateCommand _EditReturnCommand;
+        public DelegateCommand EditReturnCommand =>
+            _EditReturnCommand ?? (_EditReturnCommand = new DelegateCommand(ExecuteEditReturnCommand));
+
+        void ExecuteEditReturnCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.TagMst));
+        }
+        #endregion
+
     }
 }

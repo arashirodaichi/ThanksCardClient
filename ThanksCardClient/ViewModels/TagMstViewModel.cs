@@ -88,5 +88,16 @@ namespace ThanksCardClient.ViewModels
             this.UpdateTags();
         }
         #endregion
+
+        #region TagReturnCommand
+        private DelegateCommand _TagReturnCommand;
+        public DelegateCommand TagReturnCommand =>
+            _TagReturnCommand ?? (_TagReturnCommand = new DelegateCommand(ExecuteTagReturnCommand));
+
+        void ExecuteTagReturnCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Footer));
+        }
+        #endregion
     }
 }
