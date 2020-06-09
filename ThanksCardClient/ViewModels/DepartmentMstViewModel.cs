@@ -94,7 +94,7 @@ namespace ThanksCardClient.ViewModels
 
         void ExecuteDepartmentCreateCommand1()
         {
-            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Footer));
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Departmentmenu));
         }
         #endregion
     }
