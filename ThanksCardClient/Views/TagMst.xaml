@@ -30,5 +30,6 @@
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>
+        <Button Content="戻る" Command="{Binding TagReturnCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="45" Margin="114,0,-59,0"/>
     </Grid>
 </UserControl>
