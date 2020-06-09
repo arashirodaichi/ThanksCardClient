@@ -4,17 +4,18 @@
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid Width="821" Height="422" RenderTransformOrigin="0.473,0." Background="Transparent">
-        <StackPanel Margin="0,0,0,0.4" Grid.RowSpan="3" >
-            <StackPanel.Background>
-                <ImageBrush ImageSource="kansha.png" />
-            </StackPanel.Background>
-        </StackPanel>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="29*"/>
+            <ColumnDefinition Width="167*"/>
+            <ColumnDefinition Width="625*"/>
+        </Grid.ColumnDefinitions>
+       
         <Grid.RowDefinitions>
             <RowDefinition Height="163*"/>
             <RowDefinition Height="671*"/>
             <RowDefinition Height="835*"/>
         </Grid.RowDefinitions>
-        <Label Content="Thank you ！" HorizontalAlignment="Left" Margin="23,8,0,0" VerticalAlignment="Top" Width="265" Height="48" FontSize="24" FontFamily="Wide Latin" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+        <Label Content="Thank you ！" HorizontalAlignment="Left" Margin="5.2,5,0,0" VerticalAlignment="Top" Width="265" Height="48" FontSize="24" FontFamily="Wide Latin" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Grid.Column="1" Grid.RowSpan="2">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -30,13 +31,13 @@
                 </LinearGradientBrush>
             </Label.Foreground>
         </Label>
-        <Button Content="ログアウト" HorizontalAlignment="Left" Height="31" Margin="706,11,0,0" VerticalAlignment="Top" Width="79" Grid.RowSpan="2"/>
-        <Button Content="感謝カード送信" HorizontalAlignment="Left" Height="29.6" Margin="677.8,99.4,0,0" VerticalAlignment="Top" Width="79.2" FontSize="10" Background="#FF7AB5FF"/>
-        <Button Content="感謝カード閲覧" HorizontalAlignment="Left" Height="29.6" Margin="584.2,99.4,0,0" VerticalAlignment="Top" Width="79.2" FontSize="10" Background="#FF7AB5FF"/>
-        <Button Content="ありがとうランキング" HorizontalAlignment="Left" Height="29.6" Margin="490.6,99.4,0,0" VerticalAlignment="Top" Width="79.2" FontSize="9" Background="#FF7AB5FF"/>
-        <Rectangle Fill="#FFF6F6F6" HorizontalAlignment="Left" Height="34" Stroke="Black" VerticalAlignment="Top" Width="747" Margin="38,53,0,0" Grid.Row="1"/>
-        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="9.6" Margin="57,31.4,0,0" Stroke="Black" VerticalAlignment="Top" Width="1.6"/>
-        <ComboBox HorizontalAlignment="Left" Height="18" Margin="444,58.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="77" BorderBrush="#FFFCFAFA">
+        <Button Content="ログアウト" HorizontalAlignment="Left" Height="31" Margin="510,11,0,0" VerticalAlignment="Top" Width="79" Grid.RowSpan="2" Grid.Column="2"/>
+        <Button Content="感謝カード送信" HorizontalAlignment="Left" Height="30" Margin="482,57.4,0,0" VerticalAlignment="Top" Width="79" FontSize="10" Background="#FF7AB5FF" Grid.Column="2" Grid.Row="1"/>
+        <Button Content="感謝カード閲覧" HorizontalAlignment="Left" Height="30" Margin="388,57.4,0,0" VerticalAlignment="Top" Width="79" FontSize="10" Background="#FF7AB5FF" Grid.Column="2" Grid.Row="1"/>
+        <Button Content="ありがとうランキング" HorizontalAlignment="Left" Height="30" Margin="295,57.4,0,0" VerticalAlignment="Top" Width="79" FontSize="9" Background="#FF7AB5FF" Grid.Column="2" Grid.Row="1"/>
+        <Rectangle Fill="#FFF6F6F6" HorizontalAlignment="Left" Height="34" Stroke="Black" VerticalAlignment="Top" Width="747" Margin="9.2,53.4,0,0" Grid.Row="1" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="10" Margin="28.2,31,0,0" Stroke="Black" VerticalAlignment="Top" Width="2" Grid.Column="1"/>
+        <ComboBox HorizontalAlignment="Left" Height="18" Margin="248,58.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="77" BorderBrush="#FFFCFAFA" Grid.Column="2">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -44,8 +45,8 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="18" Margin="343,58.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76"/>
-        <ComboBox HorizontalAlignment="Left" Height="18" Margin="245,58.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="77">
+        <ComboBox HorizontalAlignment="Left" Height="18" Margin="147,58.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="76" Grid.Column="2"/>
+        <ComboBox HorizontalAlignment="Left" Height="18" Margin="49,58.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="77" Grid.Column="2">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -53,7 +54,7 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" Height="19" Margin="147,57.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="77">
+        <ComboBox HorizontalAlignment="Left" Height="19" Margin="118.2,57.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="77" Grid.ColumnSpan="2" Grid.Column="1">
             <ComboBox.Background>
                 <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
                     <GradientStop Color="#FFF0F0F0" Offset="0"/>
@@ -61,10 +62,10 @@
                 </LinearGradientBrush>
             </ComboBox.Background>
         </ComboBox>
-        <Button Content="検索" HorizontalAlignment="Left" Height="18" Margin="570,57.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="77" Background="#FF7AB5FF"/>
-        <Button Content="リセット" HorizontalAlignment="Left" Height="18" Margin="678,57.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="77"/>
+        <Button Content="検索" HorizontalAlignment="Left" Height="18" Margin="374,57.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="77" Background="#FF7AB5FF" Grid.Column="2"/>
+        <Button Content="リセット" HorizontalAlignment="Left" Height="18" Margin="482,57.4,0,0" Grid.Row="1" VerticalAlignment="Top" Width="77" Grid.Column="2"/>
 
-        <DataGrid HorizontalAlignment="Left" Height="200" Margin="38,164.4,0,0" VerticalAlignment="Top" Width="747" Grid.Row="1" Grid.RowSpan="2">
+        <DataGrid HorizontalAlignment="Left" Height="200" Margin="9.2,164.4,0,0" VerticalAlignment="Top" Width="747" Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2" Grid.Column="1">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="部署" Binding="{Binding Department}"/>
                 <DataGridTextColumn Header="タイトル" Binding="{Binding Title}"/>
