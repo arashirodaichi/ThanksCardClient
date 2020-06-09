@@ -24,6 +24,7 @@
                 </DataGrid.Columns>
             </DataGrid>
         </StackPanel>
+        
         <Button Content="戻る" Command="{Binding ListCommand1}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="364,3,-157.4,0"/>
     </Grid>
 </UserControl>
