@@ -39,5 +39,27 @@ namespace ThanksCardClient.ViewModels
             this.regionManager.RequestNavigate("ContentRegion", nameof(Views.BackUp));
         }
         #endregion
+
+        #region DepartmentDepartmentsCommand
+        private DelegateCommand _DepartmentDepartmentsCommand;
+        public DelegateCommand DepartmentDepartmentsCommand =>
+            _DepartmentDepartmentsCommand ?? (_DepartmentDepartmentsCommand = new DelegateCommand(ExecuteDepartmentDepartmentsCommand));
+
+        void ExecuteDepartmentDepartmentsCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.DepartmentMst));
+        }
+        #endregion
+
+        #region DepartmentUserCommand
+        private DelegateCommand _DepartmentUserCommand;
+        public DelegateCommand DepartmentUserCommand =>
+            _DepartmentUserCommand ?? (_DepartmentUserCommand = new DelegateCommand(ExecuteDepartmentUserCommand));
+
+        void ExecuteDepartmentUserCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.UserMst));
+        }
+        #endregion
     }
 }
