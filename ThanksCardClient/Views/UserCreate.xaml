@@ -10,9 +10,9 @@
             <TextBox Text="{Binding User.Name}"/>
             <TextBlock Text="パスワードを入力:"/>
             <TextBox Text="{Binding User.Password}"/>
-            <TextBlock Text="管理者ですか:"/>
+            <TextBlock Text="あなたは管理者ですか？:"/>
             <CheckBox IsChecked="{Binding User.IsAdmin}"/>
-            <TextBlock Text="部署:"/>
+            <TextBlock Text="部署を選択:"/>
             <ComboBox ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValue="{Binding User.DepartmentId}" SelectedValuePath="Id"/>
             <Button Content="追加" Command="{Binding SubmitCommand}"/>
         </StackPanel>

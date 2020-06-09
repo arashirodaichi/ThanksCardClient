@@ -93,14 +93,14 @@ namespace ThanksCardClient.ViewModels
         }
         #endregion
 
-        #region UserCreateCommand1
+        #region UserCreateCommand1（戻る）
         private DelegateCommand _UserCreateCommand1;
         public DelegateCommand UserCreateCommand1 =>
             _UserCreateCommand1 ?? (_UserCreateCommand1 = new DelegateCommand(ExecuteUserCreateCommand1));
 
         void ExecuteUserCreateCommand1()
         {
-            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Footer));
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Departmentmenu));
         }
         #endregion
     }
