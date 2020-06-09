@@ -1,4 +1,5 @@
-﻿using System.Windows.Controls;
+﻿using System;
+using System.Windows.Controls;
 
 namespace ThanksCardClient.Views
 {
@@ -10,6 +11,11 @@ namespace ThanksCardClient.Views
         public keijiban2()
         {
             InitializeComponent();
+        }
+
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
         }
     }
 }
