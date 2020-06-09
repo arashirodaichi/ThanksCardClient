@@ -4,6 +4,7 @@
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid Height="245.79" Width="295.2">
+        
         <StackPanel Margin="-10,-17,-10,-2" >
             <StackPanel.Background>
                 <ImageBrush ImageSource="kansha.png" />
