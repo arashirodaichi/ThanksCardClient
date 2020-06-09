@@ -4,7 +4,11 @@
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
     <Grid Height="245.79" Width="295.2">
-
+        <StackPanel Margin="-10,-17,-10,-2" >
+            <StackPanel.Background>
+                <ImageBrush ImageSource="kansha.png" />
+            </StackPanel.Background>
+        </StackPanel>
         <Label Content="部署一覧" HorizontalAlignment="Left" Margin="101.2,20.2,0,0" VerticalAlignment="Top" Height="25" FontFamily="HGSSoeiKakupoptai" Foreground="#FF1D1C0A" Width="99" HorizontalContentAlignment="Center">
             <Label.Background>
                 <RadialGradientBrush>
