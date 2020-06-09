@@ -74,7 +74,7 @@
     <Compile Include="ViewModels\DepartmentMstViewModel.cs" />
     <Compile Include="ViewModels\FooterViewModel.cs" />
     <Compile Include="ViewModels\HeaderViewModel.cs" />
-    <Compile Include="ViewModels\keijiban2ViewModel.cs" />
+    <Compile Include="ViewModels\ReceiveRankingViewModel.cs" />
     <Compile Include="ViewModels\TagCreateViewModel.cs" />
     <Compile Include="ViewModels\TagEditViewModel.cs" />
     <Compile Include="ViewModels\TagMstViewModel.cs" />
@@ -108,8 +108,8 @@
     <Compile Include="Views\Header.xaml.cs">
       <DependentUpon>Header.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\keijiban2.xaml.cs">
-      <DependentUpon>keijiban2.xaml</DependentUpon>
+    <Compile Include="Views\ReceiveRanking.xaml.cs">
+      <DependentUpon>ReceiveRanking.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TagCreate.xaml.cs">
       <DependentUpon>TagCreate.xaml</DependentUpon>
@@ -195,6 +195,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Views\ReceiveRanking.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\TagCreate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -256,6 +260,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes.MahApps">
+      <Version>0.1.4</Version>
+    </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>12.0.3</Version>
     </PackageReference>
