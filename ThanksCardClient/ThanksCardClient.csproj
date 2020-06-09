@@ -81,6 +81,7 @@
     <Compile Include="ViewModels\ThanksCardCreateViewModel.cs" />
     <Compile Include="ViewModels\ThanksCardEditViewModel.cs" />
     <Compile Include="ViewModels\ThanksCardListViewModel.cs" />
+    <Compile Include="ViewModels\ThanksrankingViewModel.cs" />
     <Compile Include="ViewModels\UserCreateViewModel.cs" />
     <Compile Include="ViewModels\UserEditViewModel.cs" />
     <Compile Include="ViewModels\UserMstViewModel.cs" />
@@ -128,6 +129,9 @@
     </Compile>
     <Compile Include="Views\ThanksCardList.xaml.cs">
       <DependentUpon>ThanksCardList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Thanksranking.xaml.cs">
+      <DependentUpon>Thanksranking.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\UserCreate.xaml.cs">
       <DependentUpon>UserCreate.xaml</DependentUpon>
@@ -220,6 +224,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\ThanksCardList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Thanksranking.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
