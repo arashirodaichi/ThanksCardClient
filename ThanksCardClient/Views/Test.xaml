@@ -1,0 +1,8 @@
+﻿<UserControl x:Class="ThanksCardClient.Views.Test"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"             
+             prism:ViewModelLocator.AutoWireViewModel="True" Width="386.581" Height="221.708">
+    <DataGrid HorizontalAlignment="Left" Height="110.4" Margin="57,32.3,0,0" VerticalAlignment="Top" Width="207.2"/>
+
+</UserControl>

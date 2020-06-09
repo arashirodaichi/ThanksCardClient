@@ -8,6 +8,14 @@
             <ColumnDefinition Width="5*"/>
             <ColumnDefinition Width="328*"/>
         </Grid.ColumnDefinitions>
+        <Label Content="受け取りランキング" Grid.Column="1" HorizontalAlignment="Center" Height="26.887" Margin="165.173,10,166.667,0" VerticalAlignment="Top" Width="98.598" FontWeight="Bold"/>
+        <DataGrid Grid.Column="1" HorizontalAlignment="Left" Height="57.341" Margin="57.422,47.201,0,0" VerticalAlignment="Top" Width="103.491">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="社員名" Binding="{Binding Name}" />
+                <DataGridTextColumn Header="件数" Binding="{Binding Number}" />
+            </DataGrid.Columns>
+        </DataGrid>
 
     </Grid>
 </UserControl>
