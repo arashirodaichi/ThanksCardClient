@@ -6,15 +6,15 @@
     <Grid>
         <StackPanel>
             <TextBlock Text="{Binding ErrorMessage}" Foreground="Red"/>
-            <TextBlock Text="Name:"/>
+            <TextBlock Text="名前を入力:"/>
             <TextBox Text="{Binding User.Name}"/>
-            <TextBlock Text="Password:"/>
+            <TextBlock Text="パスワードを入力:"/>
             <TextBox Text="{Binding User.Password}"/>
-            <TextBlock Text="IsAdmin:"/>
+            <TextBlock Text="あなたは管理者ですか？:"/>
             <CheckBox IsChecked="{Binding User.IsAdmin}"/>
-            <TextBlock Text="Department:"/>
+            <TextBlock Text="部署を選択:"/>
             <ComboBox SelectedItem="{Binding User.Department}" ItemsSource="{Binding Departments}" DisplayMemberPath="Name" SelectedValue="{Binding User.DepartmentId}" SelectedValuePath="Id"/>
-            <Button Content="Submit" Command="{Binding SubmitCommand}"/>
+            <Button Content="更新" Command="{Binding SubmitCommand}"/>
         </StackPanel>
     </Grid>
 </UserControl>
