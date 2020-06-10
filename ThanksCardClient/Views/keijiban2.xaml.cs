@@ -4,11 +4,11 @@ using System.Windows.Controls;
 namespace ThanksCardClient.Views
 {
     /// <summary>
-    /// Interaction logic for keijiban2
+    /// Interaction logic for Keijiban2
     /// </summary>
-    public partial class keijiban2 : UserControl
+    public partial class Keijiban2 : UserControl
     {
-        public keijiban2()
+        public Keijiban2()
         {
             InitializeComponent();
         }
