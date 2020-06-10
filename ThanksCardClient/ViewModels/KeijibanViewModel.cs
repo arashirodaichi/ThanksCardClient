@@ -6,9 +6,9 @@ using System.Linq;
 
 namespace ThanksCardClient.ViewModels
 {
-    public class Keijiban2ViewModel : BindableBase
+    public class KeijibanViewModel : BindableBase
     {
-        public Keijiban2ViewModel()
+        public KeijibanViewModel()
         {
 
         }
