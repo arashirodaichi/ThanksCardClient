@@ -12,10 +12,5 @@ namespace ThanksCardClient.Views
         {
             InitializeComponent();
         }
-
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
-        }
     }
 }
