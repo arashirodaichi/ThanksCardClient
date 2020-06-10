@@ -69,6 +69,7 @@
     <Compile Include="ViewModels\BackUpViewModel.cs" />
     <Compile Include="ViewModels\DepartmentCreateViewModel.cs" />
     <Compile Include="ViewModels\DepartmentEditViewModel.cs" />
+    <Compile Include="ViewModels\DepartmentmenuViewModel.cs" />
     <Compile Include="ViewModels\DepartmentMstViewModel.cs" />
     <Compile Include="ViewModels\FooterViewModel.cs" />
     <Compile Include="ViewModels\HeaderViewModel.cs" />
@@ -264,28 +265,13 @@
     <PackageReference Include="Prism.Unity" Version="7.2.0.1367" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Views\人事.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Views\人事2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Views\テーマ.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Views\テーマ2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Views\受け取りランキング.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Views\受け取りランキング.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Views\ありがとうランキング.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Views\感謝カード背景.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Views\kansha.png" />
