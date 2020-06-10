@@ -52,7 +52,7 @@ namespace ThanksCardClient.ViewModels
 
         void ExecuteListCommand1()
         {
-            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Footer));
+            this.regionManager.RequestNavigate("FooterRegion", nameof(Views.Footer));
         }
         #endregion
     }
