@@ -282,5 +282,14 @@
   <ItemGroup>
     <Resource Include="Views\受け取りランキング.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\ありがとうランキング.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\感謝カード背景.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\kansha.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
