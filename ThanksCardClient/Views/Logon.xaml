@@ -9,10 +9,10 @@
             <TextBlock Text="Thank You!" FontSize="70" Foreground="Silver" HorizontalAlignment="Center"/>
             <TextBlock Text="{Binding ErrorMessage}" Foreground="Red"/>
             <TextBlock Text="ユーザー名" HorizontalAlignment="Center"/>
-            <TextBox Text="{Binding User.Name}" Margin="200,0"/>
+            <TextBox Text="{Binding User.Name}" Margin="300,0"/>
             <TextBlock Text="パスワード" HorizontalAlignment="Center"/>
-            <PasswordBox local:PasswordBoxHelper.Password="{Binding User.Password}"  Margin="200,0"/>
-            <Button Content="ログイン" Command="{Binding LogonCommand}" Background="GreenYellow" Margin="110,0,110.6,0" Height="40"/>
+            <PasswordBox local:PasswordBoxHelper.Password="{Binding User.Password}"  Margin="300,0"/>
+            <Button Content="ログイン" Command="{Binding LogonCommand}" Background="GreenYellow" Margin="400,0,400.0,0" Height="40"/>
         </StackPanel>
     </Grid>
 </UserControl>
