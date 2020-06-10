@@ -96,7 +96,7 @@ namespace ThanksCardClient.ViewModels
 
         void ExecuteTagReturnCommand()
         {
-            this.regionManager.RequestNavigate("FooterRegion", nameof(Views.Footer));
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Footer));
         }
         #endregion
     }
