@@ -70,6 +70,7 @@
     <Compile Include="ViewModels\DepartmentCreateViewModel.cs" />
     <Compile Include="ViewModels\DepartmentmenuViewModel.cs" />
     <Compile Include="ViewModels\DepartmentEditViewModel.cs" />
+    <Compile Include="ViewModels\DepartmentmenuViewModel.cs" />
     <Compile Include="ViewModels\DepartmentMstViewModel.cs" />
     <Compile Include="ViewModels\FooterViewModel.cs" />
     <Compile Include="ViewModels\HeaderViewModel.cs" />
