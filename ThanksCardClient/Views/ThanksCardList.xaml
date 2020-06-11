@@ -13,7 +13,7 @@
                 <DataGridTextColumn Header="タイトル      " Binding="{Binding Name}" />
                 <DataGridTextColumn Header="送信者         " Binding="{Binding Name}" />
                 <DataGridTextColumn Header="受信者         " Binding="{Binding Number}" />
-                <DataGridTextColumn Header="更新日           " Binding="{Binding Number}" />
+                <DataGridTextColumn Header="更新日            " Binding="{Binding Number}" />
             </DataGrid.Columns>
         </DataGrid>
 
