@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
-    <Grid Width="455.85" Height="285.641">
+    <Grid Width="791.2" Height="485.6">
         <Grid.Background>
             <ImageBrush ImageSource="kansha.png"/>
         </Grid.Background>
@@ -26,8 +26,8 @@
             </DataGrid.Columns>
         </DataGrid>
 
-        <Button Content="戻る" Command="{Binding ListCommand1}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="370.85,10,0,0"/>
-        <Label Content="Thank You!" HorizontalAlignment="Left" Height="53" Margin="125,19,0,0" VerticalAlignment="Top" Width="213" FontSize="36" HorizontalContentAlignment="Center">
+        <Button Content="戻る" Command="{Binding ListCommand1}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="636,19,0,0"/>
+        <Label Content="Thank You!" HorizontalAlignment="Left" Height="53" Margin="303,19,0,0" VerticalAlignment="Top" Width="213" FontSize="36" HorizontalContentAlignment="Center">
             <Label.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black" Offset="0"/>
