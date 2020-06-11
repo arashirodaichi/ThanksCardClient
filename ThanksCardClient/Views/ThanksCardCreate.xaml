@@ -3,20 +3,12 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="ThanksCardClient.Views.ThanksCardCreate"
-             prism:ViewModelLocator.AutoWireViewModel="True" d:DesignWidth="104" d:DesignHeight="65.6">
-    <Grid Margin="44.8,28,-526.175,-388.2">
+             prism:ViewModelLocator.AutoWireViewModel="True">
+    <Grid Width="591" Height="419">
         <Grid.Background>
             <ImageBrush ImageSource="kansha.png"/>
         </Grid.Background>
-
-
-
-
-
-
-        <Button Content="既読" HorizontalAlignment="Left" Margin="453.6,26,0,0" VerticalAlignment="Top" Width="45" RenderTransformOrigin="-8.193,0.333" Height="17" Background="#FF32F714" FontFamily="Tw Cen MT Condensed Extra Bold"/>
-        <Button Content="いいね" HorizontalAlignment="Left" Margin="523.4,26,0,0" VerticalAlignment="Top" Width="38" RenderTransformOrigin="-0.555,-0.167" Height="17" Background="#FF13F9F5" FontFamily="Tw Cen MT Condensed Extra Bold"/>
-        <Button Content="戻る" HorizontalAlignment="Left" Margin="43,25,0,0" VerticalAlignment="Top" Width="43" Height="18" FontFamily="Tw Cen MT Condensed Extra Bold"/>
+        <Button Content="戻る" Command="{Binding ListCommand1}" HorizontalAlignment="Left" Margin="27.8,17.43,0,0" VerticalAlignment="Top" Width="58.2" Height="25.57" FontFamily="Yu Gothic" VerticalContentAlignment="Center" FontWeight="Bold"/>
         <Label Content="Thank you!" HorizontalAlignment="Left" Height="43.2" Margin="171,34.8,0,0" VerticalAlignment="Top" Width="261.6" FontSize="24" FontFamily="Wide Latin">
             <Label.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -25,11 +17,21 @@
                 </LinearGradientBrush>
             </Label.Foreground>
         </Label>
-        <TextBox HorizontalAlignment="Left" Height="36.8" Margin="56.4,101.8,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="487.4"/>
-        <TextBox HorizontalAlignment="Left" Height="37.6" Margin="56.4,138.6,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="487.4"/>
-        <TextBox HorizontalAlignment="Left" Height="39.2" Margin="56.4,176.2,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="487.4"/>
-        <TextBox HorizontalAlignment="Left" Height="38.4" Margin="56.4,215.4,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="487.4"/>
-        <TextBox HorizontalAlignment="Left" Height="140.8" Margin="56.4,253.8,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="487.4"/>
+        <TextBox HorizontalAlignment="Left" Height="37" Margin="102,102,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="442" Background="Transparent"/>
+        <TextBox HorizontalAlignment="Left" Height="37" Margin="102,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="442" Background="Transparent"/>
+        <TextBox HorizontalAlignment="Left" Height="39" Margin="102,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="442" Background="Transparent"/>
+        <TextBox HorizontalAlignment="Left" Height="39" Margin="102,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="442" Background="Transparent"/>
+        <TextBox HorizontalAlignment="Left" Height="141" Margin="43,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="501" Background="Transparent"/>
+        <Label Content="To:" HorizontalAlignment="Left" Height="37" Margin="43,102,0,0" VerticalAlignment="Top" Width="59" FontSize="20" HorizontalContentAlignment="Right"/>
+        <Label Content="From:" HorizontalAlignment="Left" Height="32" Margin="43,139,0,0" VerticalAlignment="Top" Width="59" FontSize="18" HorizontalContentAlignment="Right"/>
+        <Label Content="Date:" HorizontalAlignment="Left" Height="34" Margin="43,176,0,0" VerticalAlignment="Top" Width="59" FontSize="18" HorizontalContentAlignment="Right"/>
+        <Label Content="Title:" HorizontalAlignment="Left" Height="39" Margin="43,215,0,0" VerticalAlignment="Top" Width="59" FontSize="18" HorizontalContentAlignment="Right"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="293" Margin="43,102,0,0" VerticalAlignment="Top" Width="501">
+            <Border BorderBrush="Black" BorderThickness="1" Margin="-1,-1,0,255"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="34" Margin="43,176,0,0" VerticalAlignment="Top" Width="501"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="44" Margin="43,210,0,0" VerticalAlignment="Top" Width="501"/>
+        <Button Content="送信" HorizontalAlignment="Left" Height="24.8" Margin="511.6,17.43,0,0" VerticalAlignment="Top" Width="58" Background="#FF31E3E7" FontFamily="Yu Gothic" FontWeight="Bold" VerticalContentAlignment="Bottom"/>
 
 
 
