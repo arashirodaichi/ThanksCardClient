@@ -3,28 +3,28 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:prism="http://prismlibrary.com/"             
              prism:ViewModelLocator.AutoWireViewModel="True">
-    <Grid>
-        <StackPanel>
-            <DataGrid ItemsSource="{Binding ThanksCards}" AutoGenerateColumns="False" CanUserAddRows="False">
-                <DataGrid.Columns>
-                    <DataGridTextColumn Header="Id" Binding="{Binding Id}" />
-                    <DataGridTextColumn Header="タイトル" Binding="{Binding Title}" />
-                    <DataGridTextColumn Header="感謝の言葉" Binding="{Binding Body}" />
-                    <DataGridTextColumn Header="From" Binding="{Binding From.Name}" />
-                    <DataGridTextColumn Header="To" Binding="{Binding To.Name}" />
-                    <DataGridTextColumn Header="作成日時" Binding="{Binding CreatedDateTime}" />
-                    <DataGridTemplateColumn IsReadOnly="True" Header="タグ">
-                        <DataGridTemplateColumn.CellTemplate>
-                            <DataTemplate>
-                                <ListBox ItemsSource="{Binding ThanksCardTags}" DisplayMemberPath="Tag.Name"/>
-                            </DataTemplate>
-                        </DataGridTemplateColumn.CellTemplate>
-                    </DataGridTemplateColumn>
+    <Grid Width="455.85" Height="285.641">
+        <Grid.Background>
+            <ImageBrush ImageSource="kansha.png"/>
+        </Grid.Background>
+        <DataGrid HorizontalAlignment="Left" Height="175" Margin="49,90,0,0" VerticalAlignment="Top" Width="360" Background="White">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="部署        " Binding="{Binding Id}" />
+                <DataGridTextColumn Header="タイトル      " Binding="{Binding Name}" />
+                <DataGridTextColumn Header="送信者         " Binding="{Binding Name}" />
+                <DataGridTextColumn Header="受信者         " Binding="{Binding Number}" />
+                <DataGridTextColumn Header="更新日           " Binding="{Binding Number}" />
+            </DataGrid.Columns>
+        </DataGrid>
 
-                </DataGrid.Columns>
-            </DataGrid>
-        </StackPanel>
-        
-        <Button Content="戻る" Command="{Binding ListCommand1}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="364,3,-157.4,0"/>
+        <Button Content="戻る" Command="{Binding ListCommand1}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="370.85,10,0,0"/>
+        <Label Content="Thank You!" HorizontalAlignment="Left" Height="53" Margin="125,19,0,0" VerticalAlignment="Top" Width="213" FontSize="36" HorizontalContentAlignment="Center">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFA59797" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
     </Grid>
 </UserControl>
