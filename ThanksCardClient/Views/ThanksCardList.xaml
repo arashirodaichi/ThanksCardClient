@@ -7,13 +7,22 @@
         <Grid.Background>
             <ImageBrush ImageSource="kansha.png"/>
         </Grid.Background>
-        <DataGrid HorizontalAlignment="Left" Height="175" Margin="49,90,0,0" VerticalAlignment="Top" Width="360" Background="White">
+        <DataGrid ItemsSource="{Binding ThanksCards}" AutoGenerateColumns="False" CanUserAddRows="False" Margin="50,77,50.85,21.641">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="部署        " Binding="{Binding Id}" />
-                <DataGridTextColumn Header="タイトル      " Binding="{Binding Name}" />
-                <DataGridTextColumn Header="送信者         " Binding="{Binding Name}" />
-                <DataGridTextColumn Header="受信者         " Binding="{Binding Number}" />
-                <DataGridTextColumn Header="更新日            " Binding="{Binding Number}" />
+                <DataGridTextColumn Header="Id" Binding="{Binding Id}" />
+                <DataGridTextColumn Header="タイトル" Binding="{Binding Title}" />
+                <DataGridTextColumn Header="感謝の言葉" Binding="{Binding Body}" />
+                <DataGridTextColumn Header="送信者" Binding="{Binding From.Name}" />
+                <DataGridTextColumn Header="受信者" Binding="{Binding To.Name}" />
+                <DataGridTextColumn Header="作成日時" Binding="{Binding CreatedDateTime}" />
+                <DataGridTemplateColumn IsReadOnly="True" Header="タグ">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ListBox ItemsSource="{Binding ThanksCardTags}" DisplayMemberPath="Tag.Name"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
             </DataGrid.Columns>
         </DataGrid>
 

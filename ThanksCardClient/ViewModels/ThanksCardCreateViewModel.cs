@@ -141,5 +141,16 @@ namespace ThanksCardClient.ViewModels
 
         }
         #endregion
+
+        #region ThanksReturnCommand
+        private DelegateCommand _ThanksReturnCommand;
+        public DelegateCommand ThanksReturnCommand =>
+            _ThanksReturnCommand ?? (_ThanksReturnCommand = new DelegateCommand(ExecuteThanksReturnCommand));
+
+        void ExecuteThanksReturnCommand()
+        {
+            this.regionManager.RequestNavigate("ContentRegion", nameof(Views.Footer));
+        }
+        #endregion
     }
 }
